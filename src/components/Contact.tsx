@@ -31,20 +31,20 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6 text-portfolio-purple" />,
       title: "Email",
-      value: "shazain@example.com",
-      link: "mailto:shazain@example.com",
+      value: "bmwman435@example.com",
+      link: "mailto:bmwman435@example.com",
     },
     {
       icon: <Phone className="h-6 w-6 text-portfolio-purple" />,
       title: "Phone",
-      value: "+1 (555) 123-4567",
-      link: "tel:+15551234567",
+      value: "+92 (313) 5359040",
+      link: "tel:+923135359040",
     },
     {
       icon: <MessageSquare className="h-6 w-6 text-portfolio-purple" />,
       title: "Social",
       value: "@shazain",
-      link: "#",
+      link: "https://www.linkedin.com/in/malikshazain/",
     },
   ];
 
@@ -156,7 +156,7 @@ const Contact = () => {
                   <p className="text-gray-600 mb-4">
                     Currently accepting new projects and collaborations.
                   </p>
-                  <Button variant="outline" className="border-portfolio-purple text-portfolio-purple hover:bg-portfolio-purple hover:text-white">
+                  <Button className="border-portfolio-purple text-portfolio-purple hover:bg-portfolio-purple hover:text-white">
                     Let's Work Together
                   </Button>
                 </div>

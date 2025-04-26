@@ -5,32 +5,46 @@ import { Button } from "@/components/ui/button";
 const Certifications = () => {
   const certifications = [
     {
-      title: "Web Development Mastery",
-      issuer: "Tech Academy",
-      date: "April 2023",
-      description: "Advanced web development techniques including frontend frameworks and responsive design.",
-      link: "#",
+      title: "Preparing Data for Analysis",
+      issuer: "Microsoft",
+      date: "June 26, 2024",
+      description: "Built a strong foundation in preparing, cleaning, and organizing data using Microsoft Excel.",
+      link: "https://coursera.org/share/17a17f1e429cad18c9544dfb462a373a",
     },
     {
-      title: "UI/UX Design Certification",
-      issuer: "Design Institute",
-      date: "January 2023",
-      description: "Comprehensive training in user experience design, wireframing, and prototyping.",
-      link: "#",
+      title: "Harnessing the Power of Data",
+      issuer: "Microsoft",
+      date: "Jul 04, 2024",
+      description: "Gained hands-on experience in transforming data into actionable insights using Power BI.",
+      link: "https://coursera.org/share/dd0d7bf235a43e08c4dc9e83d5eade94",
     },
     {
-      title: "Data Science Fundamentals",
-      issuer: "Data Analytics Pro",
-      date: "October 2022",
-      description: "Foundations of data analysis, visualization, and machine learning algorithms.",
-      link: "#",
+      title: "Extract, Transform and Load Data",
+      issuer: "Microsoft",
+      date: "Jul 17, 2024",
+      description: "Learned to efficiently ETL data into Power BI for analysis.",
+      link: "https://coursera.org/share/a0a17cd1718dc96d5cc05269a401809d",
     },
     {
-      title: "Project Management Professional",
-      issuer: "PM Institute",
-      date: "June 2022",
-      description: "Advanced project management methodologies, risk assessment, and team leadership.",
-      link: "#",
+      title: "Generative AI: Prompt Engineering Basics",
+      issuer: "IBM",
+      date: "Jan 30, 2025",
+      description: "Gained skills to design prompts that produce accurate and creative AI-driven outputs.",
+      link: "https://coursera.org/share/fac9ae835c446ce03c7e6d7dc9d3f70e",
+    },
+    {
+      title: "Data Science Foundations: Fundamentals",
+      issuer: "IBM",
+      date: "Feb 15, 2025",
+      description: "Acquired foundational knowledge in data science concepts and methodologies.",
+      link: "https://coursera.org/share/0f1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o",
+    },
+    {
+      title: "Retrieval Augmented Generation (RAG)",
+      issuer: "Coursera Instructor Network",
+      date: "jan 30, 2025",
+      description: "Core concepts of Retrieval Augmented Generation (RAG) to enhance AI responses with real-time data.",
+      link: "https://coursera.org/share/26437fca359bb1c96878b165bdd0db86",
     },
   ];
 
@@ -62,7 +76,7 @@ const Certifications = () => {
                 <p className="text-gray-600">{cert.description}</p>
               </CardContent>
               <CardFooter>
-                <Button variant="link" className="px-0 text-portfolio-purple hover:text-portfolio-purple-dark" asChild>
+                <Button className="px-0 text-portfolio-purple hover:text-portfolio-purple-dark" asChild>
                   <a href={cert.link}>View Certificate</a>
                 </Button>
               </CardFooter>
