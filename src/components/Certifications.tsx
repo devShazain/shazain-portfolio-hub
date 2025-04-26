@@ -33,13 +33,6 @@ const Certifications = () => {
       link: "https://coursera.org/share/fac9ae835c446ce03c7e6d7dc9d3f70e",
     },
     {
-      title: "Data Science Foundations: Fundamentals",
-      issuer: "IBM",
-      date: "Feb 15, 2025",
-      description: "Acquired foundational knowledge in data science concepts and methodologies.",
-      link: "https://coursera.org/share/0f1a2b3c4d5e6f7g8h9i0j1k2l3m4n5o",
-    },
-    {
       title: "Retrieval Augmented Generation (RAG)",
       issuer: "Coursera Instructor Network",
       date: "jan 30, 2025",
