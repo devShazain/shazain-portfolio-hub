@@ -1,19 +1,13 @@
-
 import { Button } from "@/components/ui/button";
-
 const Hero = () => {
-  return (
-    <section id="home" className="relative pt-32 pb-16 md:pt-40 md:pb-20">
+  return <section id="home" className="relative pt-32 pb-16 md:pt-40 md:pb-20">
       <div className="container mx-auto px-4">
         <div className="flex flex-col md:flex-row items-center gap-8 md:gap-12">
           <div className="w-full md:w-1/2 space-y-6 animate-fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
               Hi, I'm <span className="text-portfolio-purple">Shazain!</span>
             </h1>
-            <p className="text-xl text-gray-700">
-              Welcome to my portfolio — where creativity meets technical expertise.
-              I craft digital experiences that make a difference.
-            </p>
+            <p className="text-xl text-gray-700 font-medium">Building cool web apps using AI and data so you can get things done faster and smarter.</p>
             <div className="flex gap-4 pt-2">
               <Button className="button-gradient" asChild>
                 <a href="#projects">My Work</a>
@@ -37,8 +31,6 @@ const Hero = () => {
         <div className="absolute top-20 right-10 w-24 h-24 bg-portfolio-peach rounded-full opacity-30 animate-pulse-subtle"></div>
         <div className="absolute bottom-10 left-10 w-16 h-16 bg-portfolio-blue rounded-full opacity-30 animate-pulse-subtle"></div>
       </div>
-    </section>
-  );
+    </section>;
 };
-
 export default Hero;
