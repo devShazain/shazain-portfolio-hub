@@ -31,14 +31,14 @@ const Contact = () => {
     {
       icon: <Mail className="h-6 w-6 text-portfolio-purple" />,
       title: "Email",
-      value: "bmwman435@example.com",
-      link: "mailto:bmwman435@example.com",
+      value: "bmwman435@gmail.com",
+      link: "mailto:bmwman435@gmail.com",
     },
     {
       icon: <Phone className="h-6 w-6 text-portfolio-purple" />,
       title: "Phone",
-      value: "+92 (313) 5359040",
-      link: "tel:+923135359040",
+      value: "+92 (313) 5359049",
+      link: "tel:+923135359049",
     },
     {
       icon: <MessageSquare className="h-6 w-6 text-portfolio-purple" />,
