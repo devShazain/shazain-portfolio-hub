@@ -69,7 +69,10 @@ const Certifications = () => {
                 <p className="text-gray-600">{cert.description}</p>
               </CardContent>
               <CardFooter>
-                <Button className="px-0 text-portfolio-purple hover:text-portfolio-purple-dark" asChild>
+                <Button 
+                  className="px-6 w-full text-portfolio-purple hover:text-white hover:bg-portfolio-purple-light transition-colors duration-300" 
+                  asChild
+                >
                   <a href={cert.link}>View Certificate</a>
                 </Button>
               </CardFooter>
