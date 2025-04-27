@@ -1,19 +1,35 @@
-import { Award, Book, Briefcase } from "lucide-react";
+import { Database, Code, BarChart, Activity, Swim } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+
 const About = () => {
-  const interests = [{
-    title: "Technology",
-    description: "Passionate about the latest tech trends, software development, and innovative solutions.",
-    icon: <Briefcase className="h-10 w-10 text-portfolio-purple" />
-  }, {
-    title: "Education",
-    description: "Committed to continuous learning and sharing knowledge with the community.",
-    icon: <Book className="h-10 w-10 text-portfolio-purple" />
-  }, {
-    title: "Excellence",
-    description: "Strive for excellence in every project and challenge I take on.",
-    icon: <Award className="h-10 w-10 text-portfolio-purple" />
-  }];
+  const interests = [
+    {
+      title: "Data Cleaning & Transformation",
+      description: "Transforming raw data into meaningful insights, ensuring accuracy and reliability for robust decision-making.",
+      icon: <Database className="h-10 w-10 text-portfolio-purple" />
+    },
+    {
+      title: "Data Analysis & Visualization",
+      description: "Uncovering hidden patterns and telling compelling stories through data with Power BI and advanced analytics.",
+      icon: <BarChart className="h-10 w-10 text-portfolio-purple" />
+    },
+    {
+      title: "Full Stack Web Development",
+      description: "Creating seamless, responsive web applications using the MERN stack, bridging design and functionality.",
+      icon: <Code className="h-10 w-10 text-portfolio-purple" />
+    },
+    {
+      title: "Cross-Platform App Development",
+      description: "Building versatile mobile applications with React Native, ensuring consistent experience across different platforms.",
+      icon: <Activity className="h-10 w-10 text-portfolio-purple" />
+    },
+    {
+      title: "Swimming",
+      description: "Keeps my mind fresh, body active, and helps me generate creative ideas through disciplined training.",
+      icon: <Swim className="h-10 w-10 text-portfolio-purple" />
+    }
+  ];
+
   return <section id="about" className="section-padding bg-gray-50">
     <div className="container mx-auto px-4">
       <h2 className="section-title">About Me</h2>
@@ -25,15 +41,17 @@ const About = () => {
       <h3 className="text-2xl font-bold text-center mb-10">My Interests</h3>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-        {interests.map((interest, index) => <Card key={index} className="card-hover border-portfolio-purple-light border-opacity-40 reveal">
-          <CardHeader className="text-center pb-2">
-            <div className="mx-auto mb-4">{interest.icon}</div>
-            <CardTitle>{interest.title}</CardTitle>
-          </CardHeader>
-          <CardContent>
-            <p className="text-gray-600 text-center">{interest.description}</p>
-          </CardContent>
-        </Card>)}
+        {interests.map((interest, index) => (
+          <Card key={index} className="card-hover border-portfolio-purple-light border-opacity-40 reveal">
+            <CardHeader className="text-center pb-2">
+              <div className="mx-auto mb-4">{interest.icon}</div>
+              <CardTitle>{interest.title}</CardTitle>
+            </CardHeader>
+            <CardContent>
+              <p className="text-gray-600 text-center">{interest.description}</p>
+            </CardContent>
+          </Card>
+        ))}
       </div>
 
       <div className="mt-16 bg-portfolio-purple bg-opacity-5 p-8 rounded-xl border border-portfolio-purple border-opacity-20 reveal">
@@ -47,4 +65,5 @@ const About = () => {
     </div>
   </section>;
 };
+
 export default About;
