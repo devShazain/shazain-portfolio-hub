@@ -1,4 +1,3 @@
-
 import { Database, Code, BarChart, Activity, Waves } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
@@ -43,19 +42,9 @@ const About = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {interests.map((interest, index) => (
-          <Card 
-            key={index} 
-            className="card-hover border-portfolio-purple-light border-opacity-40 reveal"
-            style={{ 
-              animationDelay: `${index * 150}ms`,
-              transform: 'translateY(20px)',
-              opacity: 0 
-            }}
-          >
+          <Card key={index} className="card-hover border-portfolio-purple-light border-opacity-40 reveal">
             <CardHeader className="text-center pb-2">
-              <div className="mx-auto mb-4 transform transition-transform hover:scale-110 duration-300">
-                {interest.icon}
-              </div>
+              <div className="mx-auto mb-4">{interest.icon}</div>
               <CardTitle>{interest.title}</CardTitle>
             </CardHeader>
             <CardContent>
