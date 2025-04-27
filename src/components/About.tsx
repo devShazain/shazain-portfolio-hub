@@ -43,9 +43,19 @@ const About = () => {
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
         {interests.map((interest, index) => (
-          <Card key={index} className="card-hover border-portfolio-purple-light border-opacity-40 reveal">
+          <Card 
+            key={index} 
+            className="card-hover border-portfolio-purple-light border-opacity-40 reveal"
+            style={{ 
+              animationDelay: `${index * 150}ms`,
+              transform: 'translateY(20px)',
+              opacity: 0 
+            }}
+          >
             <CardHeader className="text-center pb-2">
-              <div className="mx-auto mb-4">{interest.icon}</div>
+              <div className="mx-auto mb-4 transform transition-transform hover:scale-110 duration-300">
+                {interest.icon}
+              </div>
               <CardTitle>{interest.title}</CardTitle>
             </CardHeader>
             <CardContent>
@@ -55,12 +65,23 @@ const About = () => {
         ))}
       </div>
 
-      <div className="mt-16 bg-portfolio-purple bg-opacity-5 p-8 rounded-xl border border-portfolio-purple border-opacity-20 reveal">
+      <div className="mt-16 bg-portfolio-purple bg-opacity-5 p-8 rounded-xl border border-portfolio-purple border-opacity-20 reveal hover:bg-opacity-10 transition-all duration-300">
         <h3 className="text-xl font-bold mb-4 text-center">My Journey</h3>
-        <p className="text-gray-700">
-          Throughout my professional journey, I've been driven by curiosity and a desire to create impact.
-          I've developed a diverse skill set that allows me to approach problems from multiple angles.
-          Whether it's developing innovative solutions or exploring creative concepts, I bring dedication and expertise to everything I do.
+        <p className="text-gray-700 leading-relaxed">
+          When I first started my Bachelor's in Computer Science, coding wasn't really my thing. I was way more fascinated by data how you can dig into numbers and uncover real stories. So naturally, I spent more time exploring data analysis than writing lines of code.
+          <br /><br />
+          But over the years, working with languages like C++, C#, Java, JavaScript, React, Python, XML, XAML and much more something clicked. I realized development is the real crux of tech and if I truly wanted to build meaningful solutions, I had to master both worlds.
+          <br /><br />
+          Today, I design and develop web apps and cross-platform apps, handling complete frontend and backend workflows. I love blending creativity with AI to work smarter, getting the most out of every project in less time. And even now, my passion for playing with data and extracting meaningful insights hasn't gone anywhere it's just evolved alongside everything else I've learned.
+          <br /><br />
+          Always building, always learning and always excited for what's next.
+        </p>
+      </div>
+
+      <div className="mt-12 p-8 bg-portfolio-purple-light bg-opacity-30 rounded-xl text-center reveal">
+        <h3 className="text-xl font-bold mb-3">Continuous Learning</h3>
+        <p className="text-gray-700 mb-5">
+          I believe in continuous professional development and regularly update my skills with the latest industry certifications and courses.
         </p>
       </div>
     </div>
