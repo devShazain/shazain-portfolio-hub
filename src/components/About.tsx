@@ -1,4 +1,5 @@
-import { Database, Code, BarChart, Activity, Swim } from "lucide-react";
+
+import { Database, Code, BarChart, Activity, Waves } from "lucide-react";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 
 const About = () => {
@@ -26,7 +27,7 @@ const About = () => {
     {
       title: "Swimming",
       description: "Keeps my mind fresh, body active, and helps me generate creative ideas through disciplined training.",
-      icon: <Swim className="h-10 w-10 text-portfolio-purple" />
+      icon: <Waves className="h-10 w-10 text-portfolio-purple" />
     }
   ];
 
