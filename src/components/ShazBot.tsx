@@ -57,7 +57,7 @@ const ShazBot = () => {
                 setMessages((prev) => [
                     ...prev,
                     { sender: "bot", text: "I'm not sure about that. You can email Shazain directly at " },
-                    { sender: "bot", text: <a href="mailto:bmwman435@gmail.com" className="text-portfolio-purple hover:underline">your-email@example.com</a> as any }, // Update email
+                    { sender: "bot", text: <a href="mailto:your-email@example.com" className="text-portfolio-purple hover:underline">your-email@example.com</a> as any }, // Update email
                 ]);
             }
             setIsTyping(false);
