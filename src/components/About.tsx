@@ -1,23 +1,33 @@
-import { Award, Book, Briefcase } from "lucide-react";
+import { Award, BarChart, Code, Droplet, RefreshCcw } from "lucide-react"; // Replaced Pool with Droplet
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import ShazBot from "./ShazBot"; // <-- Import at the top
 
 const About = () => {
   const interests = [
     {
-      title: "Technology",
-      description: "Passionate about the latest tech trends, software development, and innovative solutions.",
-      icon: <Briefcase className="h-10 w-10 text-portfolio-purple" />,
+      title: "Data Cleaning & Transformation",
+      description: "Mastering the art of cleaning and transforming data into valuable insights.",
+      icon: <RefreshCcw className="h-10 w-10 text-portfolio-purple" />,
     },
     {
-      title: "Education",
-      description: "Committed to continuous learning and sharing knowledge with the community.",
-      icon: <Book className="h-10 w-10 text-portfolio-purple" />,
+      title: "Data Analysis & Visualization",
+      description: "Turning raw data into visual stories that drive informed decisions.",
+      icon: <BarChart className="h-10 w-10 text-portfolio-purple" />,
     },
     {
-      title: "Excellence",
-      description: "Strive for excellence in every project and challenge I take on.",
-      icon: <Award className="h-10 w-10 text-portfolio-purple" />,
+      title: "Full Stack Development",
+      description: "Building end-to-end solutions, from front-end interfaces to back-end systems.",
+      icon: <Code className="h-10 w-10 text-portfolio-purple" />,
+    },
+    {
+      title: "Cross Platform Apps",
+      description: "Creating seamless experiences across all devices with cross-platform apps.",
+      icon: <Code className="h-10 w-10 text-portfolio-purple" />,
+    },
+    {
+      title: "Swimming",
+      description: "A refreshing way to stay fit and clear my mind.",
+      icon: <Droplet className="h-10 w-10 text-portfolio-purple" />,
     },
   ];
 

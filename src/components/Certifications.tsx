@@ -1,4 +1,3 @@
-
 import { Card, CardContent, CardDescription, CardFooter, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 
@@ -69,7 +68,10 @@ const Certifications = () => {
                 <p className="text-gray-600">{cert.description}</p>
               </CardContent>
               <CardFooter>
-                <Button className="px-0 text-portfolio-purple hover:text-portfolio-purple-dark" asChild>
+                <Button 
+                  className="button-gradient w-full" 
+                  asChild
+                >
                   <a href={cert.link}>View Certificate</a>
                 </Button>
               </CardFooter>
@@ -82,9 +84,6 @@ const Certifications = () => {
           <p className="text-gray-700 mb-5">
             I believe in continuous professional development and regularly update my skills with the latest industry certifications and courses.
           </p>
-          <Button className="button-gradient">
-            View All Credentials
-          </Button>
         </div>
       </div>
     </section>
