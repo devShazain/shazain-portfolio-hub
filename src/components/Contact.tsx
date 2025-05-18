@@ -1,4 +1,3 @@
-
 import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card";
@@ -24,28 +23,26 @@ const Contact = () => {
     e.preventDefault();
     setIsSubmitting(true);
     
-    // Using EmailJS or a similar service would be ideal, but for now, let's use a mailto link
-    // as a simple solution that works with most email clients
     try {
-      const subject = encodeURIComponent(`Contact Form Submission from ${formData.name}`);
+      // Create email content with proper formatting
+      const subject = encodeURIComponent(`Portfolio Contact: ${formData.name}`);
       const body = encodeURIComponent(
         `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
       );
       
-      // Create a hidden link and click it to open the default email client
-      const mailtoLink = document.createElement('a');
-      mailtoLink.href = `mailto:bmwman435@gmail.com?subject=${subject}&body=${body}`;
-      mailtoLink.style.display = 'none';
-      document.body.appendChild(mailtoLink);
-      mailtoLink.click();
-      document.body.removeChild(mailtoLink);
+      // Open email client with pre-filled fields
+      window.location.href = `mailto:bmwman435@gmail.com?subject=${subject}&body=${body}`;
       
-      toast.success("Email client opened! Please send the email from your client to complete.");
-      setFormData({ name: "", email: "", message: "" });
+      toast.success("Email client opened with your message. Please send the email to complete.");
+      
+      // Optional: Only reset the form once the mailto action is complete
+      setTimeout(() => {
+        setFormData({ name: "", email: "", message: "" });
+        setIsSubmitting(false);
+      }, 1000);
     } catch (error) {
-      console.error("Error submitting form:", error);
-      toast.error("Failed to open email client. Please try again or contact directly.");
-    } finally {
+      console.error("Error sending email:", error);
+      toast.error("There was an issue opening your email client. Please try again or contact directly.");
       setIsSubmitting(false);
     }
   };
