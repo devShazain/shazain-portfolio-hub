@@ -13,18 +13,41 @@ const Contact = () => {
     email: "",
     message: "",
   });
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
     setFormData((prev) => ({ ...prev, [name]: value }));
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    // In a real app, you would send this data to a server
-    console.log("Form submitted:", formData);
-    toast.success("Message sent successfully! I'll get back to you soon.");
-    setFormData({ name: "", email: "", message: "" });
+    setIsSubmitting(true);
+    
+    // Using EmailJS or a similar service would be ideal, but for now, let's use a mailto link
+    // as a simple solution that works with most email clients
+    try {
+      const subject = encodeURIComponent(`Contact Form Submission from ${formData.name}`);
+      const body = encodeURIComponent(
+        `Name: ${formData.name}\nEmail: ${formData.email}\n\nMessage:\n${formData.message}`
+      );
+      
+      // Create a hidden link and click it to open the default email client
+      const mailtoLink = document.createElement('a');
+      mailtoLink.href = `mailto:bmwman435@gmail.com?subject=${subject}&body=${body}`;
+      mailtoLink.style.display = 'none';
+      document.body.appendChild(mailtoLink);
+      mailtoLink.click();
+      document.body.removeChild(mailtoLink);
+      
+      toast.success("Email client opened! Please send the email from your client to complete.");
+      setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      console.error("Error submitting form:", error);
+      toast.error("Failed to open email client. Please try again or contact directly.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const contactMethods = [
@@ -111,8 +134,12 @@ const Contact = () => {
                       />
                     </div>
 
-                    <Button type="submit" className="button-gradient w-full">
-                      Send Message
+                    <Button 
+                      type="submit" 
+                      className="button-gradient w-full"
+                      disabled={isSubmitting}
+                    >
+                      {isSubmitting ? "Sending..." : "Send Message"}
                     </Button>
                   </div>
                 </form>

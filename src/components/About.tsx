@@ -1,6 +1,7 @@
-import { Award, BarChart, Code, Droplet, RefreshCcw } from "lucide-react"; // Replaced Pool with Droplet
+
+import { Award, BarChart, Code, RefreshCcw, LayoutGrid } from "lucide-react"; // Added LayoutGrid icon
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import ShazBot from "./ShazBot"; // <-- Import at the top
+import ShazBot from "./ShazBot";
 
 const About = () => {
   const interests = [
@@ -25,9 +26,9 @@ const About = () => {
       icon: <Code className="h-10 w-10 text-portfolio-purple" />,
     },
     {
-      title: "Swimming",
-      description: "A refreshing way to stay fit and clear my mind.",
-      icon: <Droplet className="h-10 w-10 text-portfolio-purple" />,
+      title: "SaaS Apps",
+      description: "Providing services to customers that add value to their work through software solutions.",
+      icon: <LayoutGrid className="h-10 w-10 text-portfolio-purple" />,
     },
   ];
 
@@ -46,7 +47,7 @@ const About = () => {
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           {interests.map((interest, index) => (
-            <Card key={index} className="card-hover border-portfolio-purple-light border-opacity-40 reveal">
+            <Card key={index} className="card-hover border-portfolio-purple-light border-opacity-40">
               <CardHeader className="text-center pb-2">
                 <div className="mx-auto mb-4">{interest.icon}</div>
                 <CardTitle>{interest.title}</CardTitle>
@@ -58,7 +59,7 @@ const About = () => {
           ))}
         </div>
 
-        <div className="mt-16 bg-portfolio-purple bg-opacity-5 p-8 rounded-xl border border-portfolio-purple border-opacity-20 reveal">
+        <div className="mt-16 bg-portfolio-purple bg-opacity-5 p-8 rounded-xl border border-portfolio-purple border-opacity-20">
           <h3 className="text-xl font-bold mb-4 text-center">My Journey</h3>
           <p className="text-gray-700">
             Throughout my professional journey, I've been driven by curiosity and a desire to create impact.
@@ -67,7 +68,6 @@ const About = () => {
           </p>
         </div>
 
-        {/* 👇 Add ShazBot here after About content */}
         <div className="mt-20">
           <ShazBot />
         </div>

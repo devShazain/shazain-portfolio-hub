@@ -1,3 +1,4 @@
+
 import { Button } from "@/components/ui/button";
 
 const Footer = () => {
@@ -42,7 +43,6 @@ const Footer = () => {
           </div>
 
           <div className="flex space-x-4">
-            {/* Only LinkedIn and GitHub with real links */}
             <a
               href="https://www.linkedin.com/in/malikshazain/"
               target="_blank"
@@ -62,12 +62,6 @@ const Footer = () => {
               GitHub
             </a>
           </div>
-        </div>
-
-        <div className="mt-8 text-center">
-          <Button variant="link" className="text-portfolio-purple-light hover:text-portfolio-purple p-0" asChild>
-            <a href="#home">Back to Top</a>
-          </Button>
         </div>
       </div>
     </footer>

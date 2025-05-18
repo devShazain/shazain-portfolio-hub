@@ -1,7 +1,9 @@
+
 "use client";
 
 import { useState, useEffect } from "react";
 import { Card } from "@/components/ui/card";
+import { X } from "lucide-react";
 
 const ShazBot = () => {
     const [messages, setMessages] = useState<{ sender: string; text: string }[]>([
@@ -81,8 +83,15 @@ const ShazBot = () => {
             </div>
             {isVisible && (
                 <div className="fixed bottom-10 right-10 w-80 bg-white shadow-lg rounded-xl overflow-hidden border border-gray-300 z-50">
-                    <div className="bg-portfolio-purple text-white text-center py-3 font-bold">
+                    <div className="bg-portfolio-purple text-white text-center py-3 font-bold relative">
                         ShazBot
+                        <button 
+                            onClick={toggleChatVisibility} 
+                            className="absolute right-2 top-2.5 text-white hover:text-gray-200 transition-colors"
+                            aria-label="Close chat"
+                        >
+                            <X size={20} />
+                        </button>
                     </div>
                     <div className="p-4 h-96 overflow-y-auto space-y-4">
                         {messages.map((msg, index) => (
