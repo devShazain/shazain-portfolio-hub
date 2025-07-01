@@ -7,7 +7,7 @@ const Projects = () => {
     {
       title: "SkillShare",
       description:
-        "Engineered a peer-to-peer skill-sharing platform with Firebase-based auth, live chat via Realtime DB, skill matchmaking, and a responsive Tailwind CSS UI.",
+        "Engineered a peer-to-peer skill-sharing platform with Firebase-based auth, live chat via Realtime DB, skill matchmaking, and a responsive Tailwind CSS UI. Perfect for connecting learners.",
       image: "bg-gradient-to-br from-blue-400 to-purple-500",
       tags: ["React", "Firebase", "Tailwind CSS"],
       link: "#",

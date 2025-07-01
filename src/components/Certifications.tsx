@@ -4,6 +4,13 @@ import { Button } from "@/components/ui/button";
 const Certifications = () => {
   const certifications = [
     {
+      title: "Software Engineering Job Simulation",
+      issuer: "JPMorgan Chase & Co",
+      date: "July 01, 2025",
+      description: "Completed hands-on simulation covering project setup, Kafka messaging integration, H2 database configuration, REST API development, and controller implementation.",
+      link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_cxSftNyY8gkhcpEb4_1751373437786_completion_certificate.pdf",
+    },
+    {
       title: "Preparing Data for Analysis",
       issuer: "Microsoft",
       date: "June 26, 2024",
@@ -68,8 +75,8 @@ const Certifications = () => {
                 <p className="text-gray-600">{cert.description}</p>
               </CardContent>
               <CardFooter>
-                <Button 
-                  className="button-gradient w-full" 
+                <Button
+                  className="button-gradient w-full"
                   asChild
                 >
                   <a href={cert.link}>View Certificate</a>
