@@ -5,27 +5,51 @@ import { Card, CardContent, CardFooter, CardHeader, CardTitle } from "@/componen
 const Projects = () => {
   const projects = [
     {
-      title: "Portfolio Website",
+      title: "SkillShare",
       description:
-        "A responsive portfolio website built with React and Tailwind CSS showcasing projects and skills.",
+        "Engineered a peer-to-peer skill-sharing platform with Firebase-based auth, live chat via Realtime DB, skill matchmaking, and a responsive Tailwind CSS UI.",
       image: "bg-gradient-to-br from-blue-400 to-purple-500",
-      tags: ["React", "Tailwind CSS", "UI/UX"],
+      tags: ["React", "Firebase", "Tailwind CSS"],
       link: "#",
     },
     {
-      title: "Task Management App",
+      title: "Feedback Portal",
       description:
-        "A full-stack task management application with user authentication and real-time updates.",
+        "Built a full-stack feedback portal using Django and AngularJS with real-time validation, dynamic previews, CRUD operations, and course-wise grouped report analysis.",
       image: "bg-gradient-to-br from-green-400 to-teal-500",
-      tags: ["React", "Node.js", "MongoDB"],
+      tags: ["Django", "AngularJS", "Bootstrap 5"],
       link: "#",
     },
     {
-      title: "E-commerce Platform",
+      title: "Google Events Management App",
       description:
-        "An e-commerce platform with product management, shopping cart, and payment integration.",
+        "Developed a seamless event manager with Google Sheets & Calendar API integration, featuring Google Sign-In, full calendar CRUD, and a polished UI for synced event management.",
       image: "bg-gradient-to-br from-orange-400 to-pink-500",
-      tags: ["React", "Express", "Stripe"],
+      tags: ["ReactJS", "Google APIs", "Bootstrap 5"],
+      link: "#",
+    },
+    {
+      title: "Live MySQL Table Viewer",
+      description:
+        "Built a real-time React dashboard that auto-refreshes data from MySQL tables every 4 seconds using Fetch API and setInterval for seamless monitoring.",
+      image: "bg-gradient-to-br from-purple-400 to-indigo-500",
+      tags: ["ReactJS", "MySQL", "Tailwind CSS"],
+      link: "#",
+    },
+    {
+      title: "Book Store App",
+      description:
+        "Developed a C# desktop app with full user authentication, book catalog, and admin management features.",
+      image: "bg-gradient-to-br from-red-400 to-pink-500",
+      tags: ["C#", "XAML"],
+      link: "#",
+    },
+    {
+      title: "Property and Land Locator",
+      description:
+        "Developed a Spring Boot–powered smart land cost estimator that dynamically calculates property prices based on area type and size for accurate buyer insights.",
+      image: "bg-gradient-to-br from-cyan-400 to-blue-500",
+      tags: ["Java", "Spring Boot"],
       link: "#",
     },
   ];
