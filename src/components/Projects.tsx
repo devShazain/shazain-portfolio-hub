@@ -8,7 +8,7 @@ const Projects = () => {
       title: "SkillShare",
       description:
         "Engineered a peer-to-peer skill-sharing platform with Firebase-based auth, live chat via Realtime DB, skill matchmaking, and a responsive Tailwind CSS UI. Perfect for connecting learners.",
-      image: "bg-gradient-to-br from-blue-400 to-purple-500",
+      image: "/images/skillshare.jpeg",
       tags: ["React", "Firebase", "Tailwind CSS"],
       link: "https://github.com/devShazain/skill-share",
     },
@@ -16,7 +16,7 @@ const Projects = () => {
       title: "Feedback Portal",
       description:
         "Built a full-stack feedback portal using Django and AngularJS with real-time validation, dynamic previews, CRUD operations, and course-wise grouped report analysis.",
-      image: "bg-gradient-to-br from-green-400 to-teal-500",
+      image: "/images/student_feedback_portal.jpeg",
       tags: ["Django", "AngularJS", "Bootstrap 5"],
       link: "https://github.com/devShazain/student_feedback_portal",
     },
@@ -24,7 +24,7 @@ const Projects = () => {
       title: "Google Events Management App",
       description:
         "Developed a seamless event manager with Google Sheets & Calendar API integration, featuring Google Sign-In, full calendar CRUD, and a polished UI for synced event management.",
-      image: "bg-gradient-to-br from-orange-400 to-pink-500",
+      image: "/images/google-events-app.jpeg",
       tags: ["ReactJS", "Google APIs", "Bootstrap 5"],
       link: "https://github.com/devShazain/google-events-app",
     },
@@ -32,7 +32,7 @@ const Projects = () => {
       title: "Live MySQL Table Viewer",
       description:
         "Built a real-time React dashboard that auto-refreshes data from MySQL tables every 4 seconds using Fetch API and setInterval for seamless monitoring.",
-      image: "bg-gradient-to-br from-purple-400 to-indigo-500",
+      image: "/images/LiveMySQLTable.jpeg",
       tags: ["ReactJS", "MySQL", "Tailwind CSS"],
       link: "https://github.com/devShazain/react-mysql-viewer",
     },
@@ -40,7 +40,7 @@ const Projects = () => {
       title: "Book Store App",
       description:
         "Developed a C# desktop app with full user authentication, book catalog, and admin management features.",
-      image: "bg-gradient-to-br from-red-400 to-pink-500",
+      image: "/images/bookstore.jpeg",
       tags: ["C#", "XAML"],
       link: "#",
     },
@@ -48,7 +48,7 @@ const Projects = () => {
       title: "Property and Land Locator",
       description:
         "Developed a Spring Boot–powered smart land cost estimator that dynamically calculates property prices based on area type and size for accurate buyer insights.",
-      image: "bg-gradient-to-br from-cyan-400 to-blue-500",
+      image: "/images/PropertyAndLand.jpeg",
       tags: ["Java", "Spring Boot"],
       link: "#",
     },
@@ -65,8 +65,12 @@ const Projects = () => {
               key={index}
               className="overflow-hidden border-none shadow-lg card-hover reveal"
             >
-              <div className={`h-48 ${project.image} flex items-center justify-center`}>
-                <span className="text-white text-lg font-medium">Project Image</span>
+              <div className="h-53 flex items-center justify-center bg-gray-100">
+                <img
+                  src={project.image}
+                  alt={project.title}
+                  className="object-cover h-full w-full"
+                />
               </div>
               <CardHeader>
                 <CardTitle className="text-xl text-portfolio-purple-dark">{project.title}</CardTitle>
