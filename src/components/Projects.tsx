@@ -10,7 +10,7 @@ const Projects = () => {
         "Engineered a peer-to-peer skill-sharing platform with Firebase-based auth, live chat via Realtime DB, skill matchmaking, and a responsive Tailwind CSS UI. Perfect for connecting learners.",
       image: "bg-gradient-to-br from-blue-400 to-purple-500",
       tags: ["React", "Firebase", "Tailwind CSS"],
-      link: "#",
+      link: "https://github.com/devShazain/skill-share",
     },
     {
       title: "Feedback Portal",
@@ -18,7 +18,7 @@ const Projects = () => {
         "Built a full-stack feedback portal using Django and AngularJS with real-time validation, dynamic previews, CRUD operations, and course-wise grouped report analysis.",
       image: "bg-gradient-to-br from-green-400 to-teal-500",
       tags: ["Django", "AngularJS", "Bootstrap 5"],
-      link: "#",
+      link: "https://github.com/devShazain/student_feedback_portal",
     },
     {
       title: "Google Events Management App",
@@ -26,7 +26,7 @@ const Projects = () => {
         "Developed a seamless event manager with Google Sheets & Calendar API integration, featuring Google Sign-In, full calendar CRUD, and a polished UI for synced event management.",
       image: "bg-gradient-to-br from-orange-400 to-pink-500",
       tags: ["ReactJS", "Google APIs", "Bootstrap 5"],
-      link: "#",
+      link: "https://github.com/devShazain/google-events-app",
     },
     {
       title: "Live MySQL Table Viewer",
@@ -34,7 +34,7 @@ const Projects = () => {
         "Built a real-time React dashboard that auto-refreshes data from MySQL tables every 4 seconds using Fetch API and setInterval for seamless monitoring.",
       image: "bg-gradient-to-br from-purple-400 to-indigo-500",
       tags: ["ReactJS", "MySQL", "Tailwind CSS"],
-      link: "#",
+      link: "https://github.com/devShazain/react-mysql-viewer",
     },
     {
       title: "Book Store App",
