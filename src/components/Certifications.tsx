@@ -11,6 +11,13 @@ const Certifications = () => {
       link: "https://forage-uploads-prod.s3.amazonaws.com/completion-certificates/Sj7temL583QAYpHXD/E6McHJDKsQYh79moz_Sj7temL583QAYpHXD_cxSftNyY8gkhcpEb4_1751373437786_completion_certificate.pdf",
     },
     {
+      title: "Professional Certificate in DevOps",
+      issuer: "MTF",
+      date: "July 12, 2025",
+      description: "Completed a Professional Certificate in DevOps from MTF Institute, covering core principles of CI/CD, Git Version Control, Conatiners, Configuration Management and Cloud.",
+      link: "https://www.udemy.com/certificate/UC-68680607-5184-4a92-8fbd-a20018e70c4c/",
+    },
+    {
       title: "Preparing Data for Analysis",
       issuer: "Microsoft",
       date: "June 26, 2024",
