@@ -35,7 +35,7 @@ const Certifications = () => {
       title: "Extract, Transform and Load Data",
       issuer: "Microsoft",
       date: "Jul 17, 2024",
-      description: "Learned to efficiently ETL data into Power BI for analysis.",
+      description: "Gained practical skills in importing, transforming, and preparing data from multiple sources for insightful analysis.",
       link: "https://coursera.org/share/a0a17cd1718dc96d5cc05269a401809d",
     },
     {
