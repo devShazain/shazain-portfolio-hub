@@ -14,7 +14,7 @@ const Certifications = () => {
       title: "Professional Certificate in DevOps",
       issuer: "MTF",
       date: "July 12, 2025",
-      description: "Completed a Professional Certificate in DevOps from MTF Institute, covering core principles of CI/CD, Git Version Control, Conatiners, Configuration Management and Cloud.",
+      description: "Completed a Professional Certificate in DevOps from MTF Institute, covering principles of CI/CD, Git Version Control, Conatiners, Monitoring and Cloud.",
       link: "https://www.udemy.com/certificate/UC-68680607-5184-4a92-8fbd-a20018e70c4c/",
     },
     {
