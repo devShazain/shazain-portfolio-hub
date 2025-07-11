@@ -28,7 +28,7 @@ const Certifications = () => {
       title: "Harnessing the Power of Data",
       issuer: "Microsoft",
       date: "Jul 04, 2024",
-      description: "Gained hands-on experience in transforming data into actionable insights using Power BI.",
+      description: "Gained hands-on experience in transforming raw data into actionable insights using advanced features in Power BI.",
       link: "https://coursera.org/share/dd0d7bf235a43e08c4dc9e83d5eade94",
     },
     {
@@ -42,7 +42,7 @@ const Certifications = () => {
       title: "Generative AI: Prompt Engineering Basics",
       issuer: "IBM",
       date: "Jan 30, 2025",
-      description: "Gained skills to design prompts that produce accurate and creative AI-driven outputs.",
+      description: "Gained skills to design effective prompts that generate accurate, relevant, and creative AI-driven outputs with large language models.",
       link: "https://coursera.org/share/fac9ae835c446ce03c7e6d7dc9d3f70e",
     },
     {
